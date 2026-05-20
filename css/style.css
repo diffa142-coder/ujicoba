@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* hapus ini nanti kalau sudah selesai debugging */
+    /* border:1px solid red; */
+}
+
+body {
+    margin: 0px;
+    background-color: #181717;
+    min-height: 1000px;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    padding: 5px 10px;
+    height: 60px;
+    width: 100%;
+    background: #232020;
+    position: fixed;
+    z-index: 999;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    color: rgb(255, 255, 92);
+    font-weight: bold;
+}
+
+.nav-list ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #a0a0a0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    transition: 0.3s;
+}
+
+.nav-list li a:hover {
+    background-color: #6c63ff;
+    color: white;
+}
+
+#home {
+    padding: 0px 5rem;
+    padding-top: 100px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.home-contens {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+}
+
+.home-description {
+    flex: 1;
+    color: white;
+}
+
+.home-description h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home-description p {
+    color: #bdbdbd;
+    line-height: 1.8;
+}
+
+.home-img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: solid 5px rgb(73, 75, 234);
+}
+
+#tentang {
+    padding: 100px 5rem;
+}
+
+.tentang {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 60px;
+    color: white;
+}
+
+.tentang-img img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border: solid 5px rgb(73, 75, 234);
+}
+
+.tentang-desktipsi {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tentang-desktipsi h1 {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    color: #a0a0a0;
+}
+
+.tentang-desktipsi h2 {
+    width: 100%;
+    font-size: 1.2rem;
+    color: white;
+    border-left: 4px solid rgb(73, 75, 234);
+    padding: 10px 16px;
+    background-color: rgba(73, 75, 234, 0.08);
+}
+
+/* article */
+
+#artikel {
+    padding: 100px 5rem;
+    color: white;
+}
+
+.judul {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.article-container {
+    display: flex;
+    gap: 30px;
+}
+
+.content {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+article {
+    background-color: #232020;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+article h2 {
+    margin-bottom: 15px;
+    color: rgb(255, 255, 92);
+}
+
+article p {
+    color: #cfcfcf;
+    line-height: 1.8;
+}
+
+aside {
+    flex: 1;
+    background-color: #232020;
+    padding: 20px;
+    border-radius: 10px;
+    height: fit-content;
+    color: white;
+}
+
+aside img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+aside h3 {
+    margin-bottom: 10px;
+}
+
+/* footer */
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+
+    .home-contens,
+    .tentang,
+    .article-container {
+        flex-direction: column;
+    }
+
+    .home-description {
+        text-align: center;
+    }
+
+    .home-description h1 {
+        font-size: 2rem;
+    }
+
+    .home-img img,
+    .tentang-img img {
+        width: 220px;
+        height: 220px;
+    }
+
+    #home,
+    #tentang,
+    #artikel {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        height: auto;
+        padding-bottom: 10px;
+    }
+}

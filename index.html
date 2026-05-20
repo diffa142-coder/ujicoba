@@ -3,40 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>navbar Dropdown</title>
-
-    <link rel="stylesheet" href="style.css">
+    <title>Diffa Rakha Pradipta</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="logo">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-            T E N
-        </div>
-        <ul class="nav-links">
-            <li>
-                <a href="#">Home</a>
-            </li>
 
-            <li>
-                <a href="#">About</a>
-            </li>
+    <!-- header -->
+    <header class="hero">
 
-            <li class="dropdown">
-                
-                <a href="#">Services</a>
- 
-                <ul class="dropdown-menu">
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Web Development</a></li>
-                    <li><a href="#">SEO</a></li>
+        <nav class="nav-container">
+
+            <div class="logo">T E N</div>
+
+            <div class="nav-list">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+
+                    <!-- anchor ke profil dicoding -->
+                    <li>
+                        <a href="https://www.dicoding.com/users/06_diffa23c9/academies"
+                        target="_blank">
+                        Dicoding
+                        </a>
+                    </li>
+
+                    <li><a href="#tentang">About</a></li>
+                    <li><a href="#artikel">Artikel</a></li>
                 </ul>
-            </li>
+            </div>
 
-            <li>
-                <a herf="#">Contact</a>
-            </li>
+        </nav>
 
-        </ul>
-    </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+
+        <!-- home -->
+        <section id="home">
+
+            <div class="home-contens">
+
+                <div class="home-description">
+                    <h1>Selamat Datang</h1>
+
+                    <p>
+                        Ini adalah website portfolio sederhana untuk
+                        memenuhi submission Dicoding. Manusia memang
+                        senang memberi tugas agar server bekerja lebih keras.
+                    </p>
+                </div>
+
+                <div class="home-img">
+                    <img src="foto.jpeg" alt="Foto saya">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- tentang -->
+        <section id="tentang">
+
+            <div class="tentang">
+
+                <div class="tentang-img">
+                    <img src="foto2.jpeg" alt="Foto saya">
+                </div>
+
+                <div class="tentang-desktipsi">
+
+                    <h1>KELAS</h1>
+                    <h2>X PPLG 1</h2>
+
+                    <h1>NAMA</h1>
+                    <h2>Diffa Rakha Pradipta</h2>
+
+                    <h1>ABOUT</h1>
+
+                    <h2>
+                        Perkenalkan nama saya Diffa Rakha Pradipta.
+                        Saya berusia 17 tahun dan bersekolah di
+                        SMK Negeri 1 Cianjur jurusan
+                        Pengembangan Perangkat Lunak dan Gim.
+                    </h2>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- artikel -->
+        <section id="artikel">
+
+            <h1 class="judul">Artikel</h1>
+
+            <div class="article-container">
+
+                <!-- article -->
+                <div class="content">
+
+                    <article>
+                        <h2>Belajar HTML</h2>
+
+                        <p>
+                            HTML digunakan untuk membuat struktur website.
+                            Dengan HTML kita bisa membuat heading,
+                            paragraf, gambar, tabel, dan lainnya.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h2>Belajar CSS</h2>
+
+                        <p>
+                            CSS digunakan untuk mempercantik tampilan website.
+                            Tanpa CSS website hanya terlihat seperti
+                            dokumen tugas tahun 2007.
+                        </p>
+                    </article>
+
+                </div>
+
+                <!-- aside -->
+                <aside>
+
+                    <img src="foto.jpeg" alt="profile">
+
+                    <h3>Profil Singkat</h3>
+
+                    <p>
+                        Nama : Diffa Rakha Pradipta
+                    </p>
+
+                    <p>
+                        Sekolah : SMKN 1 Cianjur
+                    </p>
+
+                    <p>
+                        Jurusan : PPLG
+                    </p>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>Copyright 2026 - Diffa Rakha Pradipta</p>
+    </footer>
+
 </body>
 </html>
